@@ -1,0 +1,34 @@
+{
+  "name": "school_management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run build && mocha ./lib/test/global-test/global.test.js",
+    "server": "nodemon --exec babel-node src/server.js",
+    "start": "babel src -d lib && node lib/server.js",
+    "build": "babel src -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "chalk-rainbow": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "stripe": "^11.14.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0"
+  }
+}
